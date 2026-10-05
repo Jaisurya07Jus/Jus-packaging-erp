@@ -1,26 +1,24 @@
-# Jus Packaging Solutions — Complete V1
+# Jus Packaging Solutions — Complete Static Website
 
-This is a working Next.js starter containing:
-- Public business website
-- Product showcase
-- Invoice / quotation creator
-- Automatic subtotal and GST calculation
-- PDF generation
-- Mobile-friendly layout
+## Included
+- Dashboard
+- Invoice creator
+- Quotation creator
+- Delivery challan
+- CGST + SGST / IGST calculation
+- Product master
+- Customer master
+- Company settings
+- Local browser storage
+- Print / Save as PDF
+- WhatsApp/Web Share
+- Mobile responsive design
 
-## Run
-Install Node.js 20+, then:
-npm install
-npm run dev
+## Host on GitHub Pages
+1. Create a GitHub repository.
+2. Upload `index.html`.
+3. Open **Settings → Pages**.
+4. Select **Deploy from a branch → main → / (root)**.
+5. Save. GitHub will provide the live website link.
 
-Open http://localhost:3000
-
-## Next production upgrades
-- Persistent database
-- Customer/product master
-- Automatic numbering
-- Quotation to invoice conversion
-- Login/admin authentication
-- Company logo/signature upload
-- CGST/SGST/IGST selection
-- Cloud deployment and custom domain
+No Node.js is required for this single-file version.
