@@ -1,160 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jus Packaging Solutions — Smart ERP</title>
-<meta name="theme-color" content="#5b2a86">
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jus Packaging Solutions ERP</title>
 <style>
-:root{--p:#5b2a86;--p2:#7b3db0;--bg:#f6f4fa;--card:#fff;--text:#21172b;--muted:#756c7d;--line:#e8e2ee;--ok:#16834b;--danger:#c63d4f}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
-header{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;padding:16px;position:sticky;top:0;z-index:10}
-.head{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{font-weight:900;font-size:20px}.tag{font-size:11px;opacity:.9;margin-top:3px}.head small{opacity:.85}
-nav{position:sticky;top:72px;z-index:9;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 2px 12px #0000000a;overflow:auto}
-.navin{max-width:1180px;margin:auto;display:flex;gap:7px;padding:9px}
-nav button{border:0;background:#f0ebf5;color:var(--p);font-weight:800;border-radius:10px;padding:11px 13px;white-space:nowrap;cursor:pointer}
-nav button.active,button.primary{background:var(--p);color:#fff}
-main{max-width:1180px;margin:auto;padding:18px}.page{display:none}.page.active{display:block}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 3px 14px #00000008;margin-bottom:14px}
-.kpi{font-size:28px;font-weight:900;color:var(--p);margin-top:6px}.muted{color:var(--muted)}
-.actions{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}
-button{cursor:pointer;border:0;border-radius:10px;padding:10px 13px;font-weight:800}
-button.secondary{background:#eee9f2;color:var(--p)}button.danger{background:#fee9ed;color:var(--danger)}
-h1{margin:5px 0 16px;font-size:28px}h2{margin:0 0 12px;font-size:20px}
-.row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-label{font-size:12px;font-weight:800;display:block;margin-top:7px}
-input,select,textarea{width:100%;padding:11px;border:1px solid #dcd5e2;border-radius:9px;background:#fff;margin:5px 0 9px;font:inherit}
-textarea{min-height:80px;resize:vertical}
-table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:12px;text-align:left;color:var(--muted)}
-.num{text-align:right}.totalbox{margin-left:auto;max-width:360px}.totalrow{display:flex;justify-content:space-between;padding:7px 0}.grand{font-size:22px;font-weight:900;color:var(--p);border-top:2px solid var(--line);margin-top:5px;padding-top:10px}
-.badge{display:inline-block;padding:5px 8px;border-radius:999px;background:#eee8f5;color:var(--p);font-size:11px;font-weight:800}
-.list{display:grid;gap:8px}.listitem{display:flex;justify-content:space-between;gap:10px;padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff}
-.search{max-width:360px}.hint{font-size:12px;color:var(--muted);line-height:1.5}
-.preview{background:#fff;border:1px solid #ddd;padding:26px;max-width:850px;margin:auto}.preview-head{display:flex;justify-content:space-between;border-bottom:3px solid var(--p);padding-bottom:12px}.preview h2{color:var(--p)}
-.empty{padding:25px;text-align:center;color:var(--muted)}
-footer{text-align:center;color:var(--muted);padding:25px}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.row3{grid-template-columns:1fr}}
-@media(max-width:560px){.grid{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}main{padding:11px}.card{padding:13px}h1{font-size:24px}.preview{padding:15px}table{font-size:12px}}
-@media print{
-header,nav,.no-print,footer{display:none!important}body{background:#fff}.page{display:none!important}.page.printing{display:block!important}main{padding:0}.preview{border:0;box-shadow:none;max-width:none}
-}
-</style>
-</head>
-<body>
-<header><div class="head"><div><div class="brand">JUS PACKAGING SOLUTIONS</div><div class="tag">One Source For All Packaging Needs</div></div><small>Smart ERP • Invoice • Quotation • Challan</small></div></header>
-<nav><div class="navin">
-<button class="active" onclick="show('home',this)">Dashboard</button>
-<button onclick="show('invoice',this)">Invoice</button><button onclick="show('quote',this)">Quotation</button>
-<button onclick="show('challan',this)">Delivery Challan</button><button onclick="show('products',this)">Products</button>
-<button onclick="show('customers',this)">Customers</button><button onclick="show('settings',this)">Settings</button>
-</div></nav>
-
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f6f4fa;color:#241b2f}header{background:#5b2a86;color:white;padding:16px 20px;display:flex;justify-content:space-between}.brand{font-weight:800;font-size:20px}.tag{font-size:11px}nav{background:white;padding:10px;display:flex;gap:8px;overflow:auto;box-shadow:0 2px 8px #0001}nav button,.btn{border:0;border-radius:10px;padding:11px 14px;font-weight:700}nav button{background:#eee8f5;color:#5b2a86;white-space:nowrap}nav button.active,.btn{background:#5b2a86;color:white}main{max-width:1100px;margin:auto;padding:18px}.page{display:none}.page.active{display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}.card{background:white;border-radius:16px;padding:18px;box-shadow:0 2px 10px #0000000d}.kpi{font-size:28px;font-weight:800;color:#5b2a86}.muted{color:#777}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}input,select,textarea{width:100%;padding:11px;border:1px solid #ddd;border-radius:9px;margin:6px 0 12px}label{font-size:13px;font-weight:700}table{width:100%;border-collapse:collapse}th,td{padding:9px;border-bottom:1px solid #eee;text-align:left}.total{font-size:24px;font-weight:800;color:#5b2a86;text-align:right;margin:15px}footer{text-align:center;padding:25px;color:#777}@media(max-width:600px){main{padding:12px}.brand{font-size:17px}}
+</style></head><body>
+<header><div><div class="brand">JUS PACKAGING SOLUTIONS</div><div class="tag">One Source For All Packaging Needs</div></div><b>ERP</b></header>
+<nav><button class="active" onclick="show('home',this)">Dashboard</button><button onclick="show('invoice',this)">Invoice</button><button onclick="show('quote',this)">Quotation</button><button onclick="show('challan',this)">Delivery Challan</button><button onclick="show('products',this)">Products</button><button onclick="show('customers',this)">Customers</button></nav>
 <main>
-<section id="home" class="page active">
-<h1>Dashboard</h1>
-<div class="grid">
-<div class="card"><div class="muted">Invoices</div><div class="kpi" id="invoiceCount">0</div></div>
-<div class="card"><div class="muted">Quotations</div><div class="kpi" id="quoteCount">0</div></div>
-<div class="card"><div class="muted">Customers</div><div class="kpi" id="customerCount">0</div></div>
-<div class="card"><div class="muted">Products</div><div class="kpi" id="productCount">0</div></div>
-</div>
-<div class="grid2">
-<div class="card"><h2>Quick Actions</h2><div class="actions">
-<button class="primary" onclick="newDoc('invoice')">+ Invoice</button>
-<button class="primary" onclick="newDoc('quote')">+ Quotation</button>
-<button class="primary" onclick="newDoc('challan')">+ Delivery Challan</button>
-</div><p class="hint">All data is saved in this browser using local storage. No server is required for this version.</p></div>
-<div class="card"><h2>Company</h2><b id="dashCompany">Jus Packaging Solutions</b><p class="muted" id="dashAddress">No:17 Indran Tower, Ganesh Nagar, near V.P. Chinthan Avenue, Urapakkam-603210</p><span class="badge">GST: configurable</span></div>
-</div>
-</section>
-
-<section id="invoice" class="page"><h1>Create Invoice</h1><div class="card">
-<div class="row3"><div><label>Invoice No.</label><input id="invNo"></div><div><label>Date</label><input id="invDate" type="date"></div><div><label>Place of Supply</label><input id="invPlace" placeholder="Tamil Nadu"></div></div>
-<div class="row"><div><label>Customer / Company</label><input id="invCustomer" placeholder="Customer name"></div><div><label>Customer GSTIN</label><input id="invGSTIN" placeholder="Optional"></div></div>
-<label>Customer Address</label><textarea id="invAddress" placeholder="Billing address"></textarea>
-<table id="invTable"><thead><tr><th style="width:40%">Item</th><th>Qty</th><th>Rate</th><th>GST %</th><th class="num">Amount</th><th></th></tr></thead><tbody></tbody></table>
-<div class="actions"><button class="secondary" onclick="addItem('inv')">+ Add Item</button></div>
-<div class="row"><div><label>Tax Type</label><select id="invTaxType" onchange="calcDoc('inv')"><option value="intra">CGST + SGST</option><option value="inter">IGST</option></select></div><div><label>Notes</label><input id="invNotes" placeholder="Thank you for your business"></div></div>
-<div class="totalbox" id="invTotals"></div><div class="actions no-print"><button class="primary" onclick="saveDoc('invoice')">Save Invoice</button><button class="secondary" onclick="printDoc('invoice')">Print / Save PDF</button><button class="secondary" onclick="shareDoc('invoice')">Share</button></div>
-</div></section>
-
-<section id="quote" class="page"><h1>Create Quotation</h1><div class="card">
-<div class="row3"><div><label>Quotation No.</label><input id="quoNo"></div><div><label>Date</label><input id="quoDate" type="date"></div><div><label>Valid Until</label><input id="quoValid" type="date"></div></div>
-<div class="row"><div><label>Customer / Company</label><input id="quoCustomer" placeholder="Customer name"></div><div><label>Customer GSTIN</label><input id="quoGSTIN" placeholder="Optional"></div></div>
-<label>Customer Address</label><textarea id="quoAddress" placeholder="Address"></textarea>
-<table id="quoTable"><thead><tr><th style="width:40%">Item</th><th>Qty</th><th>Rate</th><th>GST %</th><th class="num">Amount</th><th></th></tr></thead><tbody></tbody></table>
-<div class="actions"><button class="secondary" onclick="addItem('quo')">+ Add Item</button></div>
-<div class="row"><div><label>Tax Type</label><select id="quoTaxType" onchange="calcDoc('quo')"><option value="intra">CGST + SGST</option><option value="inter">IGST</option></select></div><div><label>Notes / Terms</label><input id="quoNotes" value="18% GST applicable"></div></div>
-<div class="totalbox" id="quoTotals"></div><div class="actions no-print"><button class="primary" onclick="saveDoc('quote')">Save Quotation</button><button class="secondary" onclick="printDoc('quote')">Print / Save PDF</button><button class="secondary" onclick="shareDoc('quote')">Share</button></div>
-</div></section>
-
-<section id="challan" class="page"><h1>Delivery Challan</h1><div class="card">
-<div class="row3"><div><label>Challan No.</label><input id="dcNo"></div><div><label>Date</label><input id="dcDate" type="date"></div><div><label>Vehicle No.</label><input id="dcVehicle" placeholder="Optional"></div></div>
-<div class="row"><div><label>Customer</label><input id="dcCustomer" placeholder="Customer / Company"></div><div><label>Reference</label><input id="dcRef" placeholder="PO / Order No."></div></div>
-<label>Delivery Address</label><textarea id="dcAddress"></textarea>
-<label>Materials</label><textarea id="dcMaterials" placeholder="Stretch film - 10 rolls&#10;Wooden pallets - 20 nos&#10;Carton boxes - 100 nos"></textarea>
-<div class="actions no-print"><button class="primary" onclick="saveDoc('challan')">Save Challan</button><button class="secondary" onclick="printDoc('challan')">Print / Save PDF</button><button class="secondary" onclick="shareDoc('challan')">Share</button></div>
-</div></section>
-
-<section id="products" class="page"><h1>Products</h1><div class="card"><div class="row3"><div><label>Product</label><input id="prodName" placeholder="Stretch Film"></div><div><label>Rate</label><input id="prodRate" type="number" placeholder="0"></div><div><label>GST %</label><input id="prodGST" type="number" value="18"></div></div><button class="primary" onclick="addProduct()">Add Product</button></div><div class="card"><input class="search" id="prodSearch" oninput="renderLists()" placeholder="Search products"><div id="productList" class="list"></div></div></section>
-
-<section id="customers" class="page"><h1>Customers</h1><div class="card"><div class="row3"><div><label>Customer / Company</label><input id="custName"></div><div><label>Phone</label><input id="custPhone"></div><div><label>GSTIN</label><input id="custGSTIN"></div></div><label>Address</label><textarea id="custAddress"></textarea><button class="primary" onclick="addCustomer()">Add Customer</button></div><div class="card"><input class="search" id="custSearch" oninput="renderLists()" placeholder="Search customers"><div id="customerList" class="list"></div></div></section>
-
-<section id="settings" class="page"><h1>Company Settings</h1><div class="card">
-<div class="row"><div><label>Company Name</label><input id="setName"></div><div><label>Email</label><input id="setEmail"></div></div>
-<div class="row"><div><label>Phone</label><input id="setPhone"></div><div><label>GSTIN</label><input id="setGSTIN"></div></div>
-<label>Address</label><textarea id="setAddress"></textarea>
-<label>Default GST %</label><input id="setGST" type="number">
-<div class="actions"><button class="primary" onclick="saveSettings()">Save Settings</button><button class="danger" onclick="clearAll()">Clear Local Data</button></div>
-<p class="hint">Your current browser data is stored only on this device/browser. Clearing browser storage will remove saved records.</p>
-</div></section>
-
-<section id="print" class="page"><div id="printArea" class="preview"></div></section>
-</main>
-<footer>Jus Packaging Solutions • Urapakkam, Chennai • Smart ERP</footer>
-
+<section id="home" class="page active"><h1>Dashboard</h1><div class="grid"><div class="card"><div class="muted">Invoices</div><div class="kpi" id="invoiceCount">0</div></div><div class="card"><div class="muted">Quotations</div><div class="kpi" id="quoteCount">0</div></div><div class="card"><div class="muted">Customers</div><div class="kpi" id="customerCount">0</div></div><div class="card"><div class="muted">Products</div><div class="kpi" id="productCount">0</div></div></div><div class="card" style="margin-top:14px"><h2>Quick Actions</h2><div class="actions"><button class="btn" onclick="show('invoice')">+ Create Invoice</button><button class="btn" onclick="show('quote')">+ Create Quotation</button><button class="btn" onclick="show('challan')">+ Delivery Challan</button></div></div></section>
+<section id="invoice" class="page"><h1>Create Invoice</h1><div class="card"><div class="row"><div><label>Invoice No.</label><input value="JS-0001"></div><div><label>Date</label><input type="date" id="invDate"></div></div><div class="row"><div><label>Customer Name</label><input placeholder="Customer / Company"></div><div><label>GSTIN</label><input placeholder="Optional"></div></div><table id="invTable"><tr><th>Item</th><th>Qty</th><th>Rate</th><th>Amount</th></tr><tr><td><input value="Stretch Film"></td><td><input type="number" value="1" oninput="calc('inv')"></td><td><input type="number" value="0" oninput="calc('inv')"></td><td class="amt">0.00</td></tr></table><div class="actions"><button class="btn" onclick="addRow('inv')">+ Add Item</button></div><label>GST %</label><input id="invTax" type="number" value="18" oninput="calc('inv')"><div id="invTotal" class="total">Total: ₹0.00</div><button class="btn" onclick="window.print()">Print / Save PDF</button></div></section>
+<section id="quote" class="page"><h1>Create Quotation</h1><div class="card"><div class="row"><div><label>Quotation No.</label><input value="Q-0001"></div><div><label>Date</label><input type="date" id="quoDate"></div></div><label>Customer Name</label><input placeholder="Customer / Company"><table id="quoTable"><tr><th>Item</th><th>Qty</th><th>Rate</th><th>Amount</th></tr><tr><td><input value="Packing Tape"></td><td><input type="number" value="1" oninput="calc('quo')"></td><td><input type="number" value="0" oninput="calc('quo')"></td><td class="amt">0.00</td></tr></table><div class="actions"><button class="btn" onclick="addRow('quo')">+ Add Item</button></div><label>GST %</label><input id="quoTax" type="number" value="18" oninput="calc('quo')"><div id="quoTotal" class="total">Total: ₹0.00</div><button class="btn" onclick="window.print()">Print / Save PDF</button></div></section>
+<section id="challan" class="page"><h1>Delivery Challan</h1><div class="card"><label>Challan No.</label><input value="DC-0001"><label>Customer</label><input placeholder="Customer / Company"><label>Material / Description</label><textarea placeholder="Stretch film, pallets, carton boxes..."></textarea><button class="btn" onclick="window.print()">Print / Save PDF</button></div></section>
+<section id="products" class="page"><h1>Products</h1><div class="card"><div class="row"><input id="prodName" placeholder="Product name"><input id="prodRate" type="number" placeholder="Rate"><button class="btn" onclick="addProduct()">Add Product</button></div><div id="productList"></div></div></section>
+<section id="customers" class="page"><h1>Customers</h1><div class="card"><div class="row"><input id="custName" placeholder="Customer name"><input id="custPhone" placeholder="Phone"><button class="btn" onclick="addCustomer()">Add Customer</button></div><div id="customerList"></div></div></section>
+</main><footer>Jus Packaging Solutions • Urapakkam, Chennai</footer>
 <script>
-const $=id=>document.getElementById(id), today=()=>new Date().toISOString().slice(0,10);
-const get=(k,d=[])=>JSON.parse(localStorage.getItem(k)||JSON.stringify(d));
-const set=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
-const defaultSettings={name:"Jus Packaging Solutions",email:"Juspackagingofficial@gmail.com",phone:"",gstin:"",address:"No:17 Indran Tower, Ganesh Nagar, near V.P. Chinthan Avenue, Urapakkam-603210",gst:18};
-function settings(){return {...defaultSettings,...get("settings",{})}}
-function nextNo(prefix,key){let n=+(localStorage.getItem(key)||"0")+1;localStorage.setItem(key,n);return prefix+String(n).padStart(4,"0")}
-function show(id,btn){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));$(id).classList.add("active");document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));if(btn)btn.classList.add("active");}
-function newDoc(type){show(type==="invoice"?"invoice":type==="quote"?"quote":"challan");resetDoc(type)}
-function resetDoc(type){
- if(type==="invoice"){ $("invNo").value=nextNo("JS-","lastInv");$("invDate").value=today();$("invCustomer").value="";$("invGSTIN").value="";$("invAddress").value="";$("invPlace").value="Tamil Nadu";$("invNotes").value="";$("invTaxType").value="intra";$("invTable").querySelector("tbody").innerHTML="";addItem("inv")}
- if(type==="quote"){ $("quoNo").value=nextNo("Q-","lastQuote");$("quoDate").value=today();$("quoValid").value=today();$("quoCustomer").value="";$("quoGSTIN").value="";$("quoAddress").value="";$("quoNotes").value="18% GST applicable";$("quoTaxType").value="intra";$("quoTable").querySelector("tbody").innerHTML="";addItem("quo")}
- if(type==="challan"){ $("dcNo").value=nextNo("DC-","lastDC");$("dcDate").value=today();$("dcVehicle").value="";$("dcCustomer").value="";$("dcRef").value="";$("dcAddress").value="";$("dcMaterials").value=""}
-}
-function addItem(t,data={name:"",qty:1,rate:0,gst:settings().gst}){let tb=$(t+"Table").querySelector("tbody"),r=document.createElement("tr");r.innerHTML=`<td><input value="${esc(data.name)}" placeholder="Product / service"></td><td><input type="number" value="${data.qty}" min="0" oninput="calcDoc('${t}')"></td><td><input type="number" value="${data.rate}" min="0" step="0.01" oninput="calcDoc('${t}')"></td><td><input type="number" value="${data.gst}" min="0" step="0.01" oninput="calcDoc('${t}')"></td><td class="num amt">0.00</td><td><button class="danger" onclick="this.closest('tr').remove();calcDoc('${t}')">×</button></td>`;tb.appendChild(r);calcDoc(t)}
-function esc(s){return String(s??"").replaceAll("&","&amp;").replaceAll('"',"&quot;").replaceAll("<","&lt;").replaceAll(">","&gt;")}
-function calcDoc(t){
- let sub=0,tax=0;[...$(t+"Table").querySelector("tbody").rows].forEach(r=>{let q=+r.cells[1].querySelector("input").value||0,rate=+r.cells[2].querySelector("input").value||0,g=+r.cells[3].querySelector("input").value||0,a=q*rate;r.querySelector(".amt").textContent=a.toFixed(2);sub+=a;tax+=a*g/100});
- let type=$(t+"TaxType").value;let gstLabel=type==="inter"?"IGST":"CGST + SGST";let gst1=type==="inter"?tax:tax/2;
- $(t+"Totals").innerHTML=`<div class="totalrow"><span>Subtotal</span><b>₹${sub.toFixed(2)}</b></div><div class="totalrow"><span>${gstLabel}</span><b>₹${tax.toFixed(2)}</b></div>${type==="intra"?`<div class="totalrow"><span>CGST</span><b>₹${gst1.toFixed(2)}</b></div><div class="totalrow"><span>SGST</span><b>₹${gst1.toFixed(2)}</b></div>`:""}<div class="totalrow grand"><span>Total</span><b>₹${(sub+tax).toFixed(2)}</b></div>`;
-}
-function collectDoc(t){
- let rows=[...$(t+"Table").querySelector("tbody").rows].map(r=>({name:r.cells[0].querySelector("input").value,qty:+r.cells[1].querySelector("input").value||0,rate:+r.cells[2].querySelector("input").value||0,gst:+r.cells[3].querySelector("input").value||0}));
- return {no:$(t+"No").value,date:$(t+"Date").value,customer:$(t+"Customer").value,gstin:$(t+"GSTIN").value,address:$(t+"Address").value,items:rows,taxType:$(t+"TaxType").value,notes:$(t+"Notes").value};
-}
-function saveDoc(kind){let t=kind==="invoice"?"inv":"quo";if(kind==="challan"){let a=get("challans");a.push({no:$("dcNo").value,date:$("dcDate").value,vehicle:$("dcVehicle").value,customer:$("dcCustomer").value,ref:$("dcRef").value,address:$("dcAddress").value,materials:$("dcMaterials").value});set("challans",a);refresh();alert("Delivery challan saved");return}
-let a=get(kind==="invoice"?"invoices":"quotes");a.push(collectDoc(t));set(kind==="invoice"?"invoices":"quotes",a);refresh();alert((kind==="invoice"?"Invoice":"Quotation")+" saved")}
-function printDoc(kind){let s=settings(),html="";if(kind==="challan"){html=`<div class="preview-head"><div><h2>${esc(s.name)}</h2><div>${esc(s.address)}</div><div>${esc(s.email)}</div></div><div><b>DELIVERY CHALLAN</b><br>No: ${esc($("dcNo").value)}<br>Date: ${esc($("dcDate").value)}</div></div><h3>Customer</h3><p>${esc($("dcCustomer").value)}<br>${esc($("dcAddress").value)}</p><h3>Materials</h3><pre>${esc($("dcMaterials").value)}</pre><p>Vehicle: ${esc($("dcVehicle").value)} &nbsp; Reference: ${esc($("dcRef").value)}</p>`}
-else{let t=kind==="invoice"?"inv":"quo",d=collectDoc(t),sub=d.items.reduce((x,i)=>x+i.qty*i.rate,0),tax=d.items.reduce((x,i)=>x+i.qty*i.rate*i.gst/100,0);html=`<div class="preview-head"><div><h2>${esc(s.name)}</h2><div>${esc(s.address)}</div><div>${esc(s.email)} ${s.phone?`• ${esc(s.phone)}`:""}</div>${s.gstin?`<div>GSTIN: ${esc(s.gstin)}</div>`:""}</div><div><b>${kind==="invoice"?"TAX INVOICE":"QUOTATION"}</b><br>No: ${esc(d.no)}<br>Date: ${esc(d.date)}</div></div><h3>Bill To</h3><p><b>${esc(d.customer)}</b><br>${esc(d.address)}${d.gstin?`<br>GSTIN: ${esc(d.gstin)}`:""}</p><table><thead><tr><th>Item</th><th>Qty</th><th>Rate</th><th>GST</th><th class="num">Amount</th></tr></thead><tbody>${d.items.map(i=>`<tr><td>${esc(i.name)}</td><td>${i.qty}</td><td>₹${i.rate.toFixed(2)}</td><td>${i.gst}%</td><td class="num">₹${(i.qty*i.rate).toFixed(2)}</td></tr>`).join("")}</tbody></table><div style="margin-left:auto;max-width:330px;margin-top:20px"><div class="totalrow"><span>Subtotal</span><b>₹${sub.toFixed(2)}</b></div><div class="totalrow"><span>GST</span><b>₹${tax.toFixed(2)}</b></div><div class="totalrow grand"><span>Total</span><b>₹${(sub+tax).toFixed(2)}</b></div></div><p><b>Notes / Terms:</b> ${esc(d.notes)}</p><br><p style="text-align:right">For ${esc(s.name)}<br><br>Authorised Signatory</p>`}
- $("printArea").innerHTML=html;document.querySelectorAll(".page").forEach(x=>x.classList.remove("printing"));$("print").classList.add("printing");show("print");setTimeout(()=>window.print(),300)}
-function shareDoc(kind){let text="Jus Packaging Solutions\\n"+(kind==="invoice"?"Invoice":"Quotation")+" generated from Smart ERP.";if(navigator.share)navigator.share({title:"Jus Packaging Solutions",text});else window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank")}
-function addProduct(){let n=$("prodName").value.trim();if(!n)return;let a=get("products");a.push({id:Date.now(),name:n,rate:+$("prodRate").value||0,gst:+$("prodGST").value||settings().gst});set("products",a);$("prodName").value="";$("prodRate").value="";renderLists();refresh()}
-function delProduct(id){set("products",get("products").filter(x=>x.id!==id));renderLists();refresh()}
-function addCustomer(){let n=$("custName").value.trim();if(!n)return;let a=get("customers");a.push({id:Date.now(),name:n,phone:$("custPhone").value,gstin:$("custGSTIN").value,address:$("custAddress").value});set("customers",a);["custName","custPhone","custGSTIN","custAddress"].forEach(id=>$(id).value="");renderLists();refresh()}
-function delCustomer(id){set("customers",get("customers").filter(x=>x.id!==id));renderLists();refresh()}
-function renderLists(){let ps=get("products"),cs=get("customers"),pq=($("prodSearch")?.value||"").toLowerCase(),cq=($("custSearch")?.value||"").toLowerCase();$("productList").innerHTML=ps.filter(x=>x.name.toLowerCase().includes(pq)).map(x=>`<div class="listitem"><span><b>${esc(x.name)}</b><br><small>₹${x.rate} • GST ${x.gst}%</small></span><button class="danger" onclick="delProduct(${x.id})">Delete</button></div>`).join("")||'<div class="empty">No products yet</div>';$("customerList").innerHTML=cs.filter(x=>x.name.toLowerCase().includes(cq)).map(x=>`<div class="listitem"><span><b>${esc(x.name)}</b><br><small>${esc(x.phone)} ${x.gstin?"• "+esc(x.gstin):""}</small></span><button class="danger" onclick="delCustomer(${x.id})">Delete</button></div>`).join("")||'<div class="empty">No customers yet</div>'}
-function saveSettings(){set("settings",{name:$("setName").value,email:$("setEmail").value,phone:$("setPhone").value,gstin:$("setGSTIN").value,address:$("setAddress").value,gst:+$("setGST").value||18});applySettings();alert("Settings saved")}
-function applySettings(){let s=settings();$("setName").value=s.name;$("setEmail").value=s.email;$("setPhone").value=s.phone;$("setGSTIN").value=s.gstin;$("setAddress").value=s.address;$("setGST").value=s.gst;$("dashCompany").textContent=s.name;$("dashAddress").textContent=s.address}
-function refresh(){$("invoiceCount").textContent=get("invoices").length;$("quoteCount").textContent=get("quotes").length;$("customerCount").textContent=get("customers").length;$("productCount").textContent=get("products").length}
-function clearAll(){if(confirm("Delete all saved invoices, quotations, challans, products and customers from this browser?")){["invoices","quotes","challans","products","customers"].forEach(k=>localStorage.removeItem(k));refresh();renderLists()}}
-applySettings();refresh();renderLists();resetDoc("invoice");resetDoc("quote");resetDoc("challan");
-</script>
-</body></html>
+const $=id=>document.getElementById(id);function show(id,b){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$(id).classList.add('active');document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active')}
+function calc(t){let s=0;[...$(t+'Table').rows].slice(1).forEach(r=>{let q=+(r.cells[1].querySelector('input')?.value||0),v=+(r.cells[2].querySelector('input')?.value||0),a=q*v;r.cells[3].textContent=a.toFixed(2);s+=a});let g=s*(+$(t+'Tax').value||0)/100;$(t+'Total').textContent='Total: ₹'+(s+g).toFixed(2)}
+function addRow(t){let r=$(t+'Table').insertRow(-1);r.innerHTML='<td><input placeholder="Item"></td><td><input type="number" value="1" oninput="calc(\''+t+'\')"></td><td><input type="number" value="0" oninput="calc(\''+t+'\')"></td><td class="amt">0.00</td>'}
+function get(k){return JSON.parse(localStorage.getItem(k)||'[]')}function set(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function addProduct(){let n=$('prodName').value.trim();if(!n)return;let a=get('products');a.push({n,r:$('prodRate').value});set('products',a);$('prodName').value='';$('prodRate').value='';render()}
+function addCustomer(){let n=$('custName').value.trim();if(!n)return;let a=get('customers');a.push({n,p:$('custPhone').value});set('customers',a);$('custName').value='';$('custPhone').value='';render()}
+function render(){let p=get('products'),c=get('customers');$('productCount').textContent=p.length;$('customerCount').textContent=c.length;$('productList').innerHTML=p.map(x=>'<p>📦 '+x.n+' — ₹'+x.r+'</p>').join('');$('customerList').innerHTML=c.map(x=>'<p>👤 '+x.n+' — '+x.p+'</p>').join('')}
+$('invDate').value=new Date().toISOString().slice(0,10);$('quoDate').value=new Date().toISOString().slice(0,10);render();calc('inv');calc('quo');
+</script></body></html>
